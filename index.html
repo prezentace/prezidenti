@@ -195,6 +195,10 @@
                         <p><a href="https://www.sspu-opava.cz" target="_blank"><img src="img/skola-logo.png" alt="Logo školy"></a></p>
                         <p>Stránka vznikla jako studijní práce v rámci předmětu Programové vybavení</p>
                         <p>&copy; 2019 - SŠPU Opava</p>
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Open modal
+                        </button>                        
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-8">
@@ -209,6 +213,43 @@
         </div>
     </footer>
 
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary">
+          <h4 class="modal-title text-white">Prezidenti</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">
+                      <img src="img/prezident0.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-8 ml-auto">
+                      <p>Narození: <b id="narozeni"></b></p>
+                      <p>Úmrtí: <b id="umrti"></b></p>
+                      <p id="popis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem asperiores, quas modi quis excepturi delectus cum laboriosam laudantium eligendi laborum tempore nisi harum facere saepe provident voluptates, reprehenderit molestias. Laborum.</p>
+                      <p><a href="#">Odkaz</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Zavřít</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
